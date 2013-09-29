@@ -1,0 +1,224 @@
+/* line 17, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 61, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 150%;
+}
+
+/* line 64, ../../../../../Program Files (x86)/Scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 24px;
+  line-height: 2.08333em;
+}
+
+/* line 18, ../sass/main.scss */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #1077ea;
+}
+
+@-moz-keyframes radius-change {
+  /* line 25, ../sass/main.scss */
+  0%, 75% {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    line-height: 50px;
+    color: #1077ea;
+  }
+
+  /* line 30, ../sass/main.scss */
+  25%, 50% {
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 124px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes radius-change {
+  /* line 25, ../sass/main.scss */
+  0%, 75% {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    line-height: 50px;
+    color: #1077ea;
+  }
+
+  /* line 30, ../sass/main.scss */
+  25%, 50% {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 124px;
+    color: white;
+  }
+}
+
+@-o-keyframes radius-change {
+  /* line 25, ../sass/main.scss */
+  0%, 75% {
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    line-height: 50px;
+    color: #1077ea;
+  }
+
+  /* line 30, ../sass/main.scss */
+  25%, 50% {
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 124px;
+    color: white;
+  }
+}
+
+@-ms-keyframes radius-change {
+  /* line 25, ../sass/main.scss */
+  0%, 75% {
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    line-height: 50px;
+    color: #1077ea;
+  }
+
+  /* line 30, ../sass/main.scss */
+  25%, 50% {
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    line-height: 124px;
+    color: white;
+  }
+}
+
+@keyframes radius-change {
+  /* line 25, ../sass/main.scss */
+  0%, 75% {
+    border-radius: 10px;
+    line-height: 50px;
+    color: #1077ea;
+  }
+
+  /* line 30, ../sass/main.scss */
+  25%, 50% {
+    border-radius: 50%;
+    line-height: 124px;
+    color: white;
+  }
+}
+
+@-moz-keyframes fade-text {}
+@-webkit-keyframes fade-text {}
+@-o-keyframes fade-text {}
+@-ms-keyframes fade-text {}
+@keyframes fade-text {}
+/* line 48, ../sass/main.scss */
+.wrapper:before {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 55, ../sass/main.scss */
+.wrapper {
+  width: 500px;
+  height: 6em;
+  margin: 10% auto;
+  position: relative;
+  border: 2px solid #000;
+}
+/* line 61, ../sass/main.scss */
+.wrapper .element {
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid #1077ea;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-animation: radius-change 5s infinite;
+  -moz-animation: radius-change 5s infinite;
+  -ms-animation: radius-change 5s infinite;
+  -o-animation: radius-change 5s infinite;
+  animation: radius-change 5s infinite;
+}
+/* line 67, ../sass/main.scss */
+.wrapper .element p {
+  padding: 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 72, ../sass/main.scss */
+.wrapper .element #box {
+  background: #1077ea;
+  position: absolute;
+  z-index: 200;
+  top: 50px;
+  left: 53px;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}

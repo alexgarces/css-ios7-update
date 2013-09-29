@@ -1,0 +1,84 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography/vertical_rhythm";
+@import "animation";
+
+$bg-color: red;
+$main-color: #1077ea;
+
+// typography
+$base-font-size: 24px;
+$base-line-height: 50px;
+$min-line-padding: 20px;
+
+
+
+@include establish-baseline(24px);
+
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	color: $main-color;
+}
+
+// create your animation
+@include keyframes(radius-change) {
+  	0%, 75% {
+    	@include border-radius(10px);
+		line-height: $base-line-height;
+		color: $main-color;
+	}
+	25%, 50% {
+		@include border-radius(50%);
+		line-height: 124px;
+		color: white;
+	}
+}
+
+@include keyframes(fade-text) {
+ //  	0%, 75% {
+ //    	@include border-radius(10px);
+	// 	line-height: $base-line-height;
+	// }
+	// 25%, 50% {
+	// 	@include border-radius(50%);
+	// 	line-height: 124px;
+	// }
+}
+
+.wrapper:before {
+	content:" ";
+	display:inline-block;
+	height:100%;
+	vertical-align:middle;
+}
+
+.wrapper {
+	width: 500px;
+	height: 6em;
+	margin: 10% auto;
+	position: relative;
+	border: 2px solid #000;
+	.element {
+		display:inline-block;
+		margin: 0 auto;
+		border: 2px solid $main-color;
+		@include border-radius(10px);
+		@include animation(radius-change 5s infinite);
+		p {	
+			padding: 0 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		#box {
+			background: $main-color;
+			position: absolute;
+			z-index: 200;
+			top: 50px;
+			left: 53px;
+			margin: 0 auto;
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+
