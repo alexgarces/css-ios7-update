@@ -168,67 +168,97 @@ body {
   }
 }
 
-@-moz-keyframes box-fade {
+@-moz-keyframes text-fade {
   /* line 38, ../sass/main.scss */
   0%, 75% {
-    opacity: 0;
+    color: #1077ea;
+    background: transparent;
+    width: 100%;
+    left: 0px;
   }
 
-  /* line 41, ../sass/main.scss */
+  /* line 44, ../sass/main.scss */
   25%, 50% {
-    opacity: 1;
+    color: transparent;
+    background: #1077ea;
+    width: 60px;
+    left: 70px;
   }
 }
 
-@-webkit-keyframes box-fade {
+@-webkit-keyframes text-fade {
   /* line 38, ../sass/main.scss */
   0%, 75% {
-    opacity: 0;
+    color: #1077ea;
+    background: transparent;
+    width: 100%;
+    left: 0px;
   }
 
-  /* line 41, ../sass/main.scss */
+  /* line 44, ../sass/main.scss */
   25%, 50% {
-    opacity: 1;
+    color: transparent;
+    background: #1077ea;
+    width: 60px;
+    left: 70px;
   }
 }
 
-@-o-keyframes box-fade {
+@-o-keyframes text-fade {
   /* line 38, ../sass/main.scss */
   0%, 75% {
-    opacity: 0;
+    color: #1077ea;
+    background: transparent;
+    width: 100%;
+    left: 0px;
   }
 
-  /* line 41, ../sass/main.scss */
+  /* line 44, ../sass/main.scss */
   25%, 50% {
-    opacity: 1;
+    color: transparent;
+    background: #1077ea;
+    width: 60px;
+    left: 70px;
   }
 }
 
-@-ms-keyframes box-fade {
+@-ms-keyframes text-fade {
   /* line 38, ../sass/main.scss */
   0%, 75% {
-    opacity: 0;
+    color: #1077ea;
+    background: transparent;
+    width: 100%;
+    left: 0px;
   }
 
-  /* line 41, ../sass/main.scss */
+  /* line 44, ../sass/main.scss */
   25%, 50% {
-    opacity: 1;
+    color: transparent;
+    background: #1077ea;
+    width: 60px;
+    left: 70px;
   }
 }
 
-@keyframes box-fade {
+@keyframes text-fade {
   /* line 38, ../sass/main.scss */
   0%, 75% {
-    opacity: 0;
+    color: #1077ea;
+    background: transparent;
+    width: 100%;
+    left: 0px;
   }
 
-  /* line 41, ../sass/main.scss */
+  /* line 44, ../sass/main.scss */
   25%, 50% {
-    opacity: 1;
+    color: transparent;
+    background: #1077ea;
+    width: 60px;
+    left: 70px;
   }
 }
 
-/* line 46, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .wrapper:before {
   content: " ";
   display: inline-block;
@@ -236,7 +266,7 @@ body {
   vertical-align: middle;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .wrapper {
   width: 500px;
   height: 6em;
@@ -244,7 +274,7 @@ body {
   position: relative;
   border: 2px solid #000;
 }
-/* line 59, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .wrapper .element {
   display: inline-block;
   margin: 0 auto;
@@ -261,7 +291,7 @@ body {
   -o-animation: radius-change 5s infinite;
   animation: radius-change 5s infinite;
 }
-/* line 66, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .wrapper .element .element-inside {
   margin: 5px;
   background: white;
@@ -278,7 +308,7 @@ body {
   -o-animation: radius-change 5s infinite;
   animation: radius-change 5s infinite;
 }
-/* line 77, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .wrapper .element p {
   padding: 0 20px;
   text-align: center;
@@ -286,13 +316,13 @@ body {
 }
 
 @-moz-keyframes circle-rotate {
-  /* line 87, ../sass/main.scss */
+  /* line 93, ../sass/main.scss */
   0% {
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 90, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   100% {
     -moz-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -300,13 +330,13 @@ body {
 }
 
 @-webkit-keyframes circle-rotate {
-  /* line 87, ../sass/main.scss */
+  /* line 93, ../sass/main.scss */
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 90, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -314,13 +344,13 @@ body {
 }
 
 @-o-keyframes circle-rotate {
-  /* line 87, ../sass/main.scss */
+  /* line 93, ../sass/main.scss */
   0% {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 90, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   100% {
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -328,13 +358,13 @@ body {
 }
 
 @-ms-keyframes circle-rotate {
-  /* line 87, ../sass/main.scss */
+  /* line 93, ../sass/main.scss */
   0% {
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 90, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   100% {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -342,18 +372,18 @@ body {
 }
 
 @keyframes circle-rotate {
-  /* line 87, ../sass/main.scss */
+  /* line 93, ../sass/main.scss */
   0% {
     transform: rotate(0deg);
   }
 
-  /* line 90, ../sass/main.scss */
+  /* line 96, ../sass/main.scss */
   100% {
     transform: rotate(360deg);
   }
 }
 
-/* line 95, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .circle {
   position: relative;
   width: 200px;
@@ -364,7 +394,7 @@ body {
   margin: 10% auto 0;
   box-shadow: 0 0 3px #ddd;
 }
-/* line 105, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .circle:before {
   content: " ";
   position: absolute;
@@ -378,7 +408,7 @@ body {
   border-radius: 50%;
   background: white;
 }
-/* line 118, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .circle .circle-inside {
   position: absolute;
   width: 0;
@@ -397,20 +427,24 @@ body {
   -o-animation: circle-rotate 2s linear infinite;
   animation: circle-rotate 2s linear infinite;
 }
-/* line 132, ../sass/main.scss */
-.circle #box {
-  background: #1077ea;
+/* line 138, ../sass/main.scss */
+.circle #text {
+  color: #1077ea;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
   position: absolute;
-  z-index: 200;
-  top: 100px;
-  left: 100px;
+  z-index: 300;
+  top: 70px;
+  left: 0px;
   margin: 0 auto;
-  width: 60px;
+  width: 100%;
   height: 60px;
-  opacity: 0;
-  -webkit-animation: box-fade 5s infinite;
-  -moz-animation: box-fade 5s infinite;
-  -ms-animation: box-fade 5s infinite;
-  -o-animation: box-fade 5s infinite;
-  animation: box-fade 5s infinite;
+  opacity: 1;
+  -webkit-animation: text-fade 5s infinite;
+  -moz-animation: text-fade 5s infinite;
+  -ms-animation: text-fade 5s infinite;
+  -o-animation: text-fade 5s infinite;
+  animation: text-fade 5s infinite;
 }

@@ -34,12 +34,18 @@ body {
 	}
 }
 
-@include keyframes(box-fade) {
+@include keyframes(text-fade) {
  	0%, 75% {
-    	opacity: 0;
+    	color: $main-color;
+    	background: transparent;
+    	width: 100%;
+    	left: 0px;	
 	}
 	25%, 50% {
-		opacity: 1;
+		color: transparent;
+		background: $main-color;
+		width: 60px;
+		left: 70px;
 	}
 }
 
@@ -129,17 +135,21 @@ body {
 		z-index: 100;
 		@include animation(circle-rotate 2s linear infinite);
 	}
-	#box {
-		background: $main-color;
+	#text {
+		color: $main-color;
+		font-size: 48px;
+		line-height: 60px;
+		text-transform: uppercase;
+		text-align: center;
 		position: absolute;
-		z-index: 200;
-		top: 100px;
-		left: 100px;
+		z-index: 300;
+		top: 70px;
+		left: 0px;
 		margin: 0 auto;
-		width: 60px;
+		width: 100%;
 		height: 60px;
-		opacity: 0;
-		@include animation(box-fade 5s infinite);
+		opacity: 1;
+		@include animation(text-fade 5s infinite);
 	}
 }
 
