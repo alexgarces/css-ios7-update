@@ -22,12 +22,12 @@ body {
 
 // create your animation
 @include keyframes(radius-change) {
-  	0%, 75% {
+  	0%, 85% {
     	@include border-radius(10px);
 		line-height: $base-line-height;
 		color: $main-color;
 	}
-	25%, 50% {
+	35%, 50% {
 		@include border-radius(50%);
 		line-height: 124px;
 		color: white;
@@ -59,26 +59,87 @@ body {
 	.element {
 		display:inline-block;
 		margin: 0 auto;
+		background: $main-color;
 		border: 2px solid $main-color;
 		@include border-radius(10px);
 		@include animation(radius-change 5s infinite);
+		.element-inside {
+			// display:inline-block;
+			margin: 5px;
+			// width: 90%;
+			background: white;
+			margin: 0 auto;
+			border-top: 6px solid $main-color;
+			@include border-radius(10px);
+			@include animation(radius-change 5s infinite);
+			// @include background-image(linear-gradient(transparent, transparent 20px, #bbbbbb 20px, #bbbbbb));
+		}
 		p {	
 			padding: 0 20px;
 			text-align: center;
 			text-transform: uppercase;
 		}
-		#box {
-			background: $main-color;
-			position: absolute;
-			z-index: 200;
-			top: 50px;
-			left: 53px;
-			margin: 0 auto;
-			width: 40px;
-			height: 40px;
-			opacity: 0;
-			@include animation(box-fade 5s infinite);
-		}
+		
+	}
+}
+
+@include keyframes(circle-rotate) {
+ 	0% {
+    	@include rotate(0deg);
+	}
+	100% {
+		@include rotate(360deg);
+	}
+}
+
+.circle {
+	position: relative;
+	width:200px;
+	height: 200px;
+	border: 12px solid $main-color;
+	// outline: 3px solid $main-color;
+	border-radius: 50%;
+	background: transparent;
+	margin: 10% auto 0;
+	box-shadow: 0 0 3px #ddd;
+	&:before {  
+	   content: " ";
+	   position: absolute;
+	   width:224px;
+	   height: 224px;
+	   z-index: -1;
+	   top: -21px;
+	   left: -21px;
+	   padding: 3px;
+	   border: 6px solid $main-color;
+	   border-radius: 50%;
+	   background: white;
+	}  
+	.circle-inside {
+		position: absolute;
+		width:0;
+		height: 0;
+		top: -15px;
+		left: -15px;
+		border-top: 115px solid white;
+		border-left: 115px solid rgba(0,0,0,0);
+		border-bottom: 115px solid white;
+		border-right: 115px solid white;
+		border-radius: 50%;
+		z-index: 100;
+		@include animation(circle-rotate 2s linear infinite);
+	}
+	#box {
+		background: $main-color;
+		position: absolute;
+		z-index: 200;
+		top: 100px;
+		left: 100px;
+		margin: 0 auto;
+		width: 60px;
+		height: 60px;
+		opacity: 0;
+		@include animation(box-fade 5s infinite);
 	}
 }
 

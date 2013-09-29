@@ -82,7 +82,7 @@ body {
 
 @-moz-keyframes radius-change {
   /* line 25, ../sass/main.scss */
-  0%, 75% {
+  0%, 85% {
     -moz-border-radius: 10px;
     border-radius: 10px;
     line-height: 50px;
@@ -90,7 +90,7 @@ body {
   }
 
   /* line 30, ../sass/main.scss */
-  25%, 50% {
+  35%, 50% {
     -moz-border-radius: 50%;
     border-radius: 50%;
     line-height: 124px;
@@ -100,7 +100,7 @@ body {
 
 @-webkit-keyframes radius-change {
   /* line 25, ../sass/main.scss */
-  0%, 75% {
+  0%, 85% {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     line-height: 50px;
@@ -108,7 +108,7 @@ body {
   }
 
   /* line 30, ../sass/main.scss */
-  25%, 50% {
+  35%, 50% {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     line-height: 124px;
@@ -118,7 +118,7 @@ body {
 
 @-o-keyframes radius-change {
   /* line 25, ../sass/main.scss */
-  0%, 75% {
+  0%, 85% {
     -o-border-radius: 10px;
     border-radius: 10px;
     line-height: 50px;
@@ -126,7 +126,7 @@ body {
   }
 
   /* line 30, ../sass/main.scss */
-  25%, 50% {
+  35%, 50% {
     -o-border-radius: 50%;
     border-radius: 50%;
     line-height: 124px;
@@ -136,7 +136,7 @@ body {
 
 @-ms-keyframes radius-change {
   /* line 25, ../sass/main.scss */
-  0%, 75% {
+  0%, 85% {
     -ms-border-radius: 10px;
     border-radius: 10px;
     line-height: 50px;
@@ -144,7 +144,7 @@ body {
   }
 
   /* line 30, ../sass/main.scss */
-  25%, 50% {
+  35%, 50% {
     -ms-border-radius: 50%;
     border-radius: 50%;
     line-height: 124px;
@@ -154,14 +154,14 @@ body {
 
 @keyframes radius-change {
   /* line 25, ../sass/main.scss */
-  0%, 75% {
+  0%, 85% {
     border-radius: 10px;
     line-height: 50px;
     color: #1077ea;
   }
 
   /* line 30, ../sass/main.scss */
-  25%, 50% {
+  35%, 50% {
     border-radius: 50%;
     line-height: 124px;
     color: white;
@@ -248,6 +248,7 @@ body {
 .wrapper .element {
   display: inline-block;
   margin: 0 auto;
+  background: #1077ea;
   border: 2px solid #1077ea;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -260,22 +261,152 @@ body {
   -o-animation: radius-change 5s infinite;
   animation: radius-change 5s infinite;
 }
-/* line 65, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
+.wrapper .element .element-inside {
+  margin: 5px;
+  background: white;
+  margin: 0 auto;
+  border-top: 6px solid #1077ea;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-animation: radius-change 5s infinite;
+  -moz-animation: radius-change 5s infinite;
+  -ms-animation: radius-change 5s infinite;
+  -o-animation: radius-change 5s infinite;
+  animation: radius-change 5s infinite;
+}
+/* line 77, ../sass/main.scss */
 .wrapper .element p {
   padding: 0 20px;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 70, ../sass/main.scss */
-.wrapper .element #box {
+
+@-moz-keyframes circle-rotate {
+  /* line 87, ../sass/main.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 90, ../sass/main.scss */
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes circle-rotate {
+  /* line 87, ../sass/main.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 90, ../sass/main.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes circle-rotate {
+  /* line 87, ../sass/main.scss */
+  0% {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 90, ../sass/main.scss */
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes circle-rotate {
+  /* line 87, ../sass/main.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 90, ../sass/main.scss */
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes circle-rotate {
+  /* line 87, ../sass/main.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 90, ../sass/main.scss */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 95, ../sass/main.scss */
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 12px solid #1077ea;
+  border-radius: 50%;
+  background: transparent;
+  margin: 10% auto 0;
+  box-shadow: 0 0 3px #ddd;
+}
+/* line 105, ../sass/main.scss */
+.circle:before {
+  content: " ";
+  position: absolute;
+  width: 224px;
+  height: 224px;
+  z-index: -1;
+  top: -21px;
+  left: -21px;
+  padding: 3px;
+  border: 6px solid #1077ea;
+  border-radius: 50%;
+  background: white;
+}
+/* line 118, ../sass/main.scss */
+.circle .circle-inside {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -15px;
+  left: -15px;
+  border-top: 115px solid white;
+  border-left: 115px solid rgba(0, 0, 0, 0);
+  border-bottom: 115px solid white;
+  border-right: 115px solid white;
+  border-radius: 50%;
+  z-index: 100;
+  -webkit-animation: circle-rotate 2s linear infinite;
+  -moz-animation: circle-rotate 2s linear infinite;
+  -ms-animation: circle-rotate 2s linear infinite;
+  -o-animation: circle-rotate 2s linear infinite;
+  animation: circle-rotate 2s linear infinite;
+}
+/* line 132, ../sass/main.scss */
+.circle #box {
   background: #1077ea;
   position: absolute;
   z-index: 200;
-  top: 50px;
-  left: 53px;
+  top: 100px;
+  left: 100px;
   margin: 0 auto;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   opacity: 0;
   -webkit-animation: box-fade 5s infinite;
   -moz-animation: box-fade 5s infinite;
