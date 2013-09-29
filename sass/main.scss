@@ -34,15 +34,13 @@ body {
 	}
 }
 
-@include keyframes(fade-text) {
- //  	0%, 75% {
- //    	@include border-radius(10px);
-	// 	line-height: $base-line-height;
-	// }
-	// 25%, 50% {
-	// 	@include border-radius(50%);
-	// 	line-height: 124px;
-	// }
+@include keyframes(box-fade) {
+ 	0%, 75% {
+    	opacity: 0;
+	}
+	25%, 50% {
+		opacity: 1;
+	}
 }
 
 .wrapper:before {
@@ -78,6 +76,8 @@ body {
 			margin: 0 auto;
 			width: 40px;
 			height: 40px;
+			opacity: 0;
+			@include animation(box-fade 5s infinite);
 		}
 	}
 }

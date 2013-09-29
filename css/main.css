@@ -168,12 +168,67 @@ body {
   }
 }
 
-@-moz-keyframes fade-text {}
-@-webkit-keyframes fade-text {}
-@-o-keyframes fade-text {}
-@-ms-keyframes fade-text {}
-@keyframes fade-text {}
-/* line 48, ../sass/main.scss */
+@-moz-keyframes box-fade {
+  /* line 38, ../sass/main.scss */
+  0%, 75% {
+    opacity: 0;
+  }
+
+  /* line 41, ../sass/main.scss */
+  25%, 50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes box-fade {
+  /* line 38, ../sass/main.scss */
+  0%, 75% {
+    opacity: 0;
+  }
+
+  /* line 41, ../sass/main.scss */
+  25%, 50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes box-fade {
+  /* line 38, ../sass/main.scss */
+  0%, 75% {
+    opacity: 0;
+  }
+
+  /* line 41, ../sass/main.scss */
+  25%, 50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes box-fade {
+  /* line 38, ../sass/main.scss */
+  0%, 75% {
+    opacity: 0;
+  }
+
+  /* line 41, ../sass/main.scss */
+  25%, 50% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-fade {
+  /* line 38, ../sass/main.scss */
+  0%, 75% {
+    opacity: 0;
+  }
+
+  /* line 41, ../sass/main.scss */
+  25%, 50% {
+    opacity: 1;
+  }
+}
+
+/* line 46, ../sass/main.scss */
 .wrapper:before {
   content: " ";
   display: inline-block;
@@ -181,7 +236,7 @@ body {
   vertical-align: middle;
 }
 
-/* line 55, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .wrapper {
   width: 500px;
   height: 6em;
@@ -189,7 +244,7 @@ body {
   position: relative;
   border: 2px solid #000;
 }
-/* line 61, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .wrapper .element {
   display: inline-block;
   margin: 0 auto;
@@ -205,13 +260,13 @@ body {
   -o-animation: radius-change 5s infinite;
   animation: radius-change 5s infinite;
 }
-/* line 67, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .wrapper .element p {
   padding: 0 20px;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 72, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .wrapper .element #box {
   background: #1077ea;
   position: absolute;
@@ -221,4 +276,10 @@ body {
   margin: 0 auto;
   width: 40px;
   height: 40px;
+  opacity: 0;
+  -webkit-animation: box-fade 5s infinite;
+  -moz-animation: box-fade 5s infinite;
+  -ms-animation: box-fade 5s infinite;
+  -o-animation: box-fade 5s infinite;
+  animation: box-fade 5s infinite;
 }
